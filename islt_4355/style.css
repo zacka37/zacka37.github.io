@@ -1,1 +1,20 @@
 h1 {color: #cc9966;}
+.reflection_paragraph_1::first-letter {
+    font-family: serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.reflection_paragraph_2 {
+    text-indent: 50px;
+}
+.reflection_paragraph_3{
+    text-indent: 50px;
+}
+.reflection_paragraph_4 {
+    text-indent: 50px;
+}
+body p {
+    display: block;
+    margin: 8px;
+    padding: 4px;
+}
