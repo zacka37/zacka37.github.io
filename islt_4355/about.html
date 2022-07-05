@@ -21,24 +21,26 @@ Tested:  Jun 28 2022; Passed on Firefox and Chrome browsers.
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>About Me</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="nav.css">
     </head>
     <body>
         <nav class="bottom_nav">
+            <label id="hamburger">&#9776;</label>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="project.html">Projects</a>
-                    <ul>
+                    <ul id="mobileHide">
                         <li><a href="#link 1">Link 1</a></li>
                         <li><a href="#link 2">Link 2</a></li>
                         <li><a href="#link 3">Link 3</a></li>
                     </ul>
                 </li>
                 <li><a href="reflection.html">Reflection</a></li>
-                <li><a href="#contact.html">Contact Page</a></li>
+                <li class="lastMobile"><a href="#contact.html">Contact</a></li>
             </ul>
         </nav>
         <header>
@@ -46,7 +48,7 @@ Tested:  Jun 28 2022; Passed on Firefox and Chrome browsers.
             <h3 class="about_page">Student during the day. Programmer at night.</h3>
         </header>
         <main class="about_page_resume_photo">
-            <a class="resume" href="Augustine_resume.pdf" alt="Resume">Click here for my Resume</a>
+            <a class="resume" href="Augustine_resume.pdf">Click here for my Resume</a>
             <img src="Me.jpg" alt="Photo of myself" width="300" height="300">
         </main>
         <section class="about_para_video">

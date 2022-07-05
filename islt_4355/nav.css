@@ -4,6 +4,9 @@
     background-color: #404040;
     border: 6px solid black;
 }
+#hamburger {
+    display: none;
+}
 .bottom_nav ul {
     float: left;
 }
@@ -44,3 +47,57 @@
 .bottom_nav ul li a:hover {
     color: #ff9900;
 }
+@media only screen and (max-width: 800px) {
+    .bottom_nav {
+    position: relative;
+            height: 40px;
+            display: block;
+            width: 100%;        
+    }
+    #hamburger {
+    display: inline-block;
+            padding-left: 20px;
+            width: 26px;
+            font-size: 2em;
+            color: #cc9966;
+    }
+    .bottom_nav ul, nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 20px 20px 20px 0px;
+    top: 20px;
+    }
+    .bottom_nav:hover ul {
+    display: block;
+    background-color: #404040;
+    width: 100px;
+    }
+    .bottom_nav:hover #mobileHide {
+    display: none;
+    }
+    .bottom_nav li {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    }
+        .bottom_nav>ul li {
+        text-align: left;
+        font-weight: bold;
+        color: #cc9966;
+        float: left;
+    }
+    .bottom_nav a {
+        text-decoration: none;
+        display: inline-block;
+        border-top: none;
+        border-bottom: none;
+        padding: 15px 0px 15px 35px;
+        width: 100px;
+        margin-bottom: 2px;
+    }
+    .bottom_nav .lastMobile {border-bottom: 3px solid rgb(0, 0, 0);}
+        nav ul li ul {
+            display:none;
+        }
+    }
+    

@@ -21,24 +21,26 @@ Tested:  Jun 28 2022; Passed on Firefox and Chrome browsers.
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
 </head>
 <body>
     <nav class="bottom_nav">
+        <label id="hamburger">&#9776;</label>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="project.html">Projects</a>
-                <ul>
+                <ul id="mobileHide">
                     <li><a href="#link 1">Link 1</a></li>
                     <li><a href="#link 2">Link 2</a></li>
                     <li><a href="#link 3">Link 3</a></li>
                 </ul>
             </li>
             <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="#contact.html">Contact</a></li>
+            <li class="lastMobile"><a href="#contact.html">Contact</a></li>
         </ul>
     </nav>
     <header>
@@ -46,13 +48,15 @@ Tested:  Jun 28 2022; Passed on Firefox and Chrome browsers.
     </header>
     <nav></nav>
     <main>
-        <h3>The website I am going to work on is a Professional/Portfolio Website (referred to as Portfolio for short)</h3>
-        <p>
+        <h3 class="index_why"><strong>The website I am going to work on is a Professional/Portfolio Website (referred to as Portfolio for short)</strong></h3>
+        <p class="index_para">
             I chose to design and create a Portfolio because I want a more personal location that I can send job recruiters to instead of my GitHub page.
             On this portfolio website I will be able to explain my personal and educational background.
             I will also be able to show and express many design attributes that I am not able to express on GitHub.
         </p>
     </main>
-    <footer>Zack Augustine zmabkx@umsystem.edu Copy Right 2022</footer>
+    <footer>
+        <p>Zack Augustine</p><p>zmabkx@umsystem.edu</p><p>Copy Right 2022</p>
+    </footer>
 </body>
 </html>
