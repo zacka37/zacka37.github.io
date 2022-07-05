@@ -26,35 +26,44 @@ Tested:  Jun 28 2022; Passed on Firefox and Chrome browsers.
         <link rel="stylesheet" href="nav.css">
     </head>
     <body>
+        <nav class="bottom_nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a>
+                    <ul>
+                        <li><a href="#link 1">Link 1</a></li>
+                        <li><a href="#link 2">Link 2</a></li>
+                        <li><a href="#link 3">Link 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html">Reflection</a></li>
+                <li><a href="#contact.html">Contact Page</a></li>
+            </ul>
+        </nav>
         <header>
             <h1>Zack Augustine</h1>
+            <h3 class="about_page">Student during the day. Programmer at night.</h3>
         </header>
-        <h3>Student during the day. Programmer at night.</h3>
-        <p>
-            My name is <strong>Zack Augustine</strong>. I was born in St. Louis Missouri United States. After graduating high school, I attended St. Louis Community College for an associate degree in General Transfer Studies. 
-            I then transferred to the <em>University</em> of <em>Missouri</em> with the hope to graduate in 2022 with a Bachelor of Science in Information Technology. 
-            I am hoping to secure a job as either a front or back-end software engineer. In the fall semester of 2022, I will receive my BS in Information Technology as well as four Certificates from the University of Missouri. 
-            The four Certificates are named Web & Mobile Application Development, Cyber Security Certificate, Information System & Technology, and Media Technology & Design.
-            <br/><blockquote>“If you try and lose then it isn't your fault. But if you don't try and we lose, then it's all your fault.” -Orson Scott Card</blockquote>
-        </p>
-        <main>
-            <a href="Augustine_resume.pdf" alt="Resume">Click here for my Resume</a>
+        <main class="about_page_resume_photo">
+            <a class="resume" href="Augustine_resume.pdf" alt="Resume">Click here for my Resume</a>
+            <img src="Me.jpg" alt="Photo of myself" width="300" height="300">
         </main>
-        <footer>Zack Augustine zmabkx@umsystem.edu Copy Right 2022</footer>
+        <section class="about_para_video">
+            <p>
+                My name is <strong>Zack Augustine</strong>. I was born in St. Louis Missouri United States. After graduating high school, I attended St. Louis Community College for an associate degree in General Transfer Studies. 
+                I then transferred to the <em>University</em> of <em>Missouri</em> with the hope to graduate in 2022 with a Bachelor of Science in Information Technology. 
+                I am hoping to secure a job as either a front or back-end software engineer. In the fall semester of 2022, I will receive my BS in Information Technology as well as four Certificates from the University of Missouri. 
+                The four Certificates are named Web & Mobile Application Development, Cyber Security Certificate, Information System & Technology, and Media Technology & Design.
+            </p>
+            <video width="320" height="240" controls>
+                <source src="About Me video (Week 1).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <blockquote class="about_page_quote">“If you try and lose then it isn't your fault. But if you don't try and we lose, then it's all your fault.” -Orson Scott Card</blockquote>
     </body>
-    <nav class="bottom_nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="project.html">Projects</a>
-                <ul>
-                    <li><a href="#link 1">Link 1</a></li>
-                    <li><a href="#link 2">Link 2</a></li>
-                    <li><a href="#link 3">Link 3</a></li>
-                </ul>
-            </li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="#contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <footer>
+        <p>Zack Augustine</p><p>zmabkx@umsystem.edu</p><p>Copy Right 2022</p>
+    </footer>
 </html>

@@ -1,3 +1,4 @@
+body {background-color: #404040;}
 h1 {color: #cc9966;}
 .reflection_paragraph_1::first-letter {
     font-family: serif;
@@ -17,4 +18,61 @@ body p {
     display: block;
     margin: 8px;
     padding: 4px;
+}
+footer {
+    color: #cc9966;
+    width: 100%;
+    height: 60px;
+    background-color: #404040;
+    border: 6px solid black;
+    display: flex;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    gap: 0%;
+    font-family: sans-serif;
+}
+header {
+    text-align: center;
+}
+/* ABOUT PAGE */
+.about_page {
+    color: white;
+}
+.resume {
+    text-decoration: underline;
+    color: white;
+}
+.about_page_quote {
+    color: #cc9966;
+    padding: 35px;
+}
+.about_page_resume_photo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: 2;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    }   
+@media screen and (max-width: 800px) {
+    .about_page_resume_photo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        grid-template-columns: 2;
+        justify-content: center;
+        align-items: center; 
+        gap: 20px  
+    }
+}
+.about_para_video {
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 2;
+    gap: 60px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
 }

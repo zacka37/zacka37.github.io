@@ -6,9 +6,9 @@
 }
 .bottom_nav ul {
     float: left;
-    margin-left: 0px;
 }
 .bottom_nav ul li {
+    font-family: sans-serif;
     float: left;
     list-style: none;
     position: relative;
@@ -40,4 +40,7 @@
 }
 .bottom_nav ul li ul li a:hover{
     background-color: #595959;
+}
+.bottom_nav ul li a:hover {
+    color: #ff9900;
 }
