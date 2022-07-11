@@ -27,13 +27,32 @@ footer {
     color: #cc9966;
     width: 100%;
     height: 60px;
-    background-color: #404040;
+    background-image: url(/images/footer_background.jpeg);
+    background-attachment: fixed;
+
+    /* background-color: #404040; */
     border: 6px solid black;
     display: flex;
     grid-template-rows: auto auto;
     justify-content: center;
     gap: 0%;
     font-family: sans-serif;
+}
+@media only screen and (max-width: 800px) {
+    footer {
+        width: 100%;
+        height: 60px;
+        background-image: url(/images/footer_background.jpeg);
+        background-attachment: fixed;
+        font-size: 10px;
+        /* background-color: #404040; */
+        border: 6px solid black;
+        display: flex;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        gap: 0%;
+        font-family: sans-serif;
+    }
 }
 header {
     text-align: center;
@@ -70,6 +89,14 @@ header {
     padding-top: 30px;
     padding-left: 60px;
     padding-right: 60px;
+}
+.email {
+    text-decoration: none;
+    color: #cc9966;
+}
+.phone {
+    text-decoration: none;
+    color: #cc9966;
 }
 @media only screen and (max-width:400px) {
     .about_para_video {
@@ -188,5 +215,8 @@ header {
         color: black;
         font-family: serif;
         background-color: white;
+    }
+    .email_logo, .phone_logo, footer.background-image {
+        display: none;
     }
 }
