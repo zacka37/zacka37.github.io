@@ -1,3 +1,7 @@
+h3 {
+    font-family: Edu NSW ACT Foundation;
+    font-size: 22px;
+}
 body {background-color: #404040;}
 h1 {color: #cc9966;}
 .reflection_paragraph_1::first-letter {
@@ -36,7 +40,7 @@ header {
 }
 /* ABOUT PAGE */
 .about_page {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .resume {
     text-decoration: underline;
@@ -54,6 +58,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 100px;
+    
     }   
 
 .about_para_video {
@@ -130,5 +135,58 @@ header {
 .reflection_paragraphs {
     color: white;
     font-family: sans-serif;
+}
+@media print {
     
+    body{
+        margin: 1in 1in;
+        background-color: white;
+        font-family: serif;
+    }
+    .about_page {
+        color: black;
+    }
+    h1,h2,h4,h5,h6,p {
+        color: black;
+        font-family: serif;
+    }
+    body p {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        color: black;
+        font-family: serif;
+    }
+    nav {
+        display: none;
+    }
+    h3 {
+        color: black;
+        font-family: Edu NSW ACT Foundation;
+    }
+    video {
+        display: none;
+    }
+    .resume {
+        display: none;
+    }
+    .about_page_quote {
+        padding: 10px;
+        color: black;
+        font-family: serif;
+    }
+    .about_para_video {
+        padding-top: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
+        color: black;
+        font-family: serif;
+    }
+    footer {
+        gap: 12%;
+        padding-top: 15px;
+        color: black;
+        font-family: serif;
+        background-color: white;
+    }
 }
