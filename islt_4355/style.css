@@ -87,9 +87,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 100px;
-    
     }   
-
 .about_para_video {
     color: white;
     display: grid;
@@ -138,6 +136,12 @@ footer a{
     font-size: large;
     padding-top: 20px;
     font-family: sans-serif;
+}
+.index_me {
+    display: block;
+    margin: auto auto;
+    width: 300px;
+    height: auto;
 }
 .index_para {
     color: white;
