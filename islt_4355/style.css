@@ -39,7 +39,6 @@ footer {
 .footer_logo {
     width: 20px;
     height: auto;
-    
 }
 .pic_big {
     position: absolute;
@@ -101,14 +100,12 @@ header {
     padding-left: 60px;
     padding-right: 60px;
 }
-.email {
+footer a{
     text-decoration: none;
     color: #cc9966;
 }
-.phone {
-    text-decoration: none;
-    color: #cc9966;
-}
+
+
 @media only screen and (max-width:400px) {
     .about_para_video {
         display: flex;
@@ -227,7 +224,11 @@ header {
         font-family: serif;
         background-color: white;
     }
-    .email_logo, .phone_logo, footer.background-image {
+
+    footer a{
+        color: black;
+    }
+.footer_logo, footer.background-image {
         display: none;
     }
 }
