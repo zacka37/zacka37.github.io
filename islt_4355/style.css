@@ -36,6 +36,20 @@ footer {
     gap: 0%;
     font-family: sans-serif;
 }
+.footer_logo {
+    width: 20px;
+    height: auto;
+    
+}
+.pic_big {
+    position: absolute;
+    width: 0px;
+    transform: translateY(-18px);
+    transition: width .3s linear 0s;
+}
+.footer_logo:hover + .pic_big {
+    width: 70px;
+}
 @media only screen and (max-width: 800px) {
     footer {
         width: 100%;
