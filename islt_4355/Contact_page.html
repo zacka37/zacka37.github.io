@@ -1,22 +1,3 @@
-<!--
-
-*****************************************************************************
-
-Title:  Home Page.
-
-Use:  The first page of my website.
-
-Author:  Zack Augustine
-
-School/Term: University of Missouri, Summer 2022
-
-Developed: Jun 28, 2022
-
-Tested:  Jun 28 2022; Passed on Firefox and Chrome browsers.
-
-******************************************************************************
-
--->
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -49,32 +30,25 @@ Tested:  Jun 28 2022; Passed on Firefox and Chrome browsers.
     </header>
     <nav></nav>
     <main>
-        <h3 class="index_why"><strong>The website I am going to work on is a Professional/Portfolio Website (referred to as Portfolio for short)</strong></h3>
-        <img class="index_me" src="Me.jpg" alt="Photo of myself">
-        <p class="index_para">
-            I chose to design and create a Portfolio because I want a more personal location that I can send job recruiters to instead of my GitHub page.
-            On this portfolio website I will be able to explain my personal and educational background.
-            I will also be able to show and express many design attributes that I am not able to express on GitHub.
-        </p>
-        <table>
-            <caption>Contact me</caption>
-            <thead>
-                <tr>
-                    <td>Phone Number</td>
-                    <td>(888)-888-8888</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Email</td>
-                    <td>zmabkx@umsystem.edu</td>
-                </tr>
-                <tr>
-                    <td>Fax</td>
-                    <td>888-888-8888</td>
-                </tr>
-            </tbody>
-        </table>
+        <form action="mailto:zmabkx@umsystem.edu?Subject=Portfolio/Professional%20Website%20Contact" method="post" enctype="text/plain">
+            <label for="name" value="First%20Name">First Name: </label>
+            <div>
+                <input type="text" name="First%20Name%20" id="First%20Name"  placeholder="First Name" required>
+            </div>
+            <label for="name" value="Last%20Name">Last Name: </label>
+            <div>
+                <input type="text" name="Last%20Name%20" id="First%20Name" placeholder="Last Name" required>
+            </div>
+            <label for="email" value="email">Email: </label>
+            <div>
+                <input type="email" name="email%20" id="email" placeholder="Email Address" required>
+            </div>
+            <label for="message" value="message">Message: </label>
+            <div>
+                <textarea name="message%20" id="message" cols="30" rows="10" required placeholder="Type your message here."></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </main>
     <footer>
         <p>
@@ -84,15 +58,15 @@ Tested:  Jun 28 2022; Passed on Firefox and Chrome browsers.
             </a>
         </p>
         <p>
-            <a class="footer_email" href="mailto:zmabkx@umsystem.edu?subject=subjecttext">
+            <a class="footer_email" href="mailto: zmabkx@umsystem.edu? subject=subject text">
                 <img class="footer_logo" src="images/Hopstarter-Sleek-Xp-Basic-Mail.ico" alt="Email Logo">zmabkx@umsystem.edu
                 <img class="pic_big" src="images/Hopstarter-Sleek-Xp-Basic-Mail.ico" alt="Email Logo">
             </a>
         </p>
         <p>
             <a class="footer_phone" href="tel:1+888-888-8888">
-                <img class="footer_logo" src="images/metro_altphone_11264.ico" alt="Phone Logo">1+888-888-8888
-                <img class="pic_big" src="images/metro_altphone_11264.ico" alt="Phone Logo">
+                <img class="footer_logo" src="images/metro_altphone_11264.ico"alt="Phone Logo">1+888-888-8888
+                <img class="pic_big" src="images/metro_altphone_11264.ico"alt="Phone Logo">
             </a>
         </p>
         <p>Copy Right 2022</p>

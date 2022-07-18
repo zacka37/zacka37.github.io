@@ -267,3 +267,11 @@ thead td{
         display: none;
     }
 }
+/* Contact Page */
+form {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: large;
+    padding: 30px;
+}
