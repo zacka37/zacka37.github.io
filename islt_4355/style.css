@@ -149,6 +149,37 @@ footer a{
     text-align: center;
     font-family: sans-serif;
 }
+table , caption {
+    margin: auto auto;
+    border-style: dashed;
+    border-radius: 10px;
+    border-color: #cc9966;
+    width: 600px;
+    height: auto;
+    padding: 5px;
+    background-color: #54534F;
+    color: white;
+}
+@media only screen and (max-width: 628px) {
+    table, caption {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 428px) {
+    table, caption {
+        width: 200px;
+    }
+}
+table tr:nth-child(even) td{
+    background-color: #9E8A76;
+}
+table td {
+    padding-right: 10px;
+
+}
+thead td{
+    background-color: #cc9966;
+}
 @media only screen and (max-width: 810px) {
     .index_para {
         font-size: 15px;
