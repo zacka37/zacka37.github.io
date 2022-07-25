@@ -9,6 +9,9 @@ h1 {color: #cc9966;}
     font-weight: bold;
     font-size: 20px;
 }
+.reflection_paragraph_1 {
+    text-indent: 50px;
+}
 .reflection_paragraph_2 {
     text-indent: 50px;
 }
@@ -49,6 +52,7 @@ footer {
 .footer_logo:hover + .pic_big {
     width: 70px;
 }
+
 @media only screen and (max-width: 800px) {
     footer {
         width: 100%;
@@ -62,6 +66,9 @@ footer {
         justify-content: center;
         gap: 0%;
         font-family: sans-serif;
+    }
+    .footer_logo:hover + .pic_big {
+        width: 40px;
     }
 }
 header {
@@ -98,6 +105,10 @@ header {
     padding-left: 60px;
     padding-right: 60px;
 }
+video {
+    width: 320px;
+    height: auto;
+}
 footer a{
     text-decoration: none;
     color: #cc9966;
@@ -115,6 +126,10 @@ footer a{
         padding-top: 30px;
         padding-left: 60px;
         padding-right: 60px;
+    }
+    video {
+        width:220px;
+        height: auto;
     }
 }
 @media only screen and (max-width: 400px) {
@@ -184,6 +199,11 @@ thead td{
     .index_para {
         font-size: 15px;
     }
+}
+.bread_crumb{
+    text-align: right;
+    color: purple;
+    background-color: #ebebeb;
 }
 /* PROJECT PAGE */
 .project {

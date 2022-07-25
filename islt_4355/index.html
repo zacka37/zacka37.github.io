@@ -35,15 +35,32 @@ Tested:  Jun 28 2022; Passed on Firefox and Chrome browsers.
             <li><a href="about.html">About</a></li>
             <li><a href="project.html">Projects</a>
                 <ul id="mobileHide">
-                    <li><a href="project.html#Project_1">Project 1</a></li>
-                    <li><a href="project.html#Project_2">Project 2</a></li>
-                    <li><a href="project.html#Project_3">Project 3</a></li>
+                    <li><a href="project.html#Project_1">Rock Paper Scissors</a></li>
+                    <li><a href="project.html#Project_2">Crime Analyzer</a></li>
+                    <li><a href="project.html#Project_3">Machine Learning</a></li>
                 </ul>
             </li>
             <li><a href="reflection.html">Reflection</a></li>
             <li class="lastMobile"><a href="Contact_page.html">Contact</a></li>
         </ul>
     </nav>
+    <div class="bread_crumb">
+        <SCRIPT LANGUAGE="JavaScript">
+            // Bread crumb script - Kevin Lynn Brown
+            // Duplicate directory names bug fix by JavaScriptKit.com
+            // Visit JavaScript Kit (http://javascriptkit.com) for script
+            var path = "";
+            var href = document.location.href;
+            var s = href.split("/");
+            for (var i=2;i<(s.length-1);i++) {
+            path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+            }
+            i=s.length-1;
+            path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+            var url = window.location.protocol + "//" + path;
+            document.writeln(url);
+        </script>
+    </div>
     <header>
         <h1>Zack Augustine</h1>
     </header>
@@ -95,7 +112,8 @@ Tested:  Jun 28 2022; Passed on Firefox and Chrome browsers.
                 <img class="pic_big" src="images/metro_altphone_11264.ico" alt="Phone Logo">
             </a>
         </p>
-        <p>Copy Right 2022</p>
+        <p>copyright 2022</p>
+        <p class="bread_crumb_text">This free script provided by <a href="http://javascriptkit.com">JavaScript Kit</a></p>
     </footer>
 </body>
 </html>
